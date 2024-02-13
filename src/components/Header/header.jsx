@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './header.module.css';
 
-function Header({handlePreviewClick, showPreview, handleResetClick, handleReplayClick, showPopup}) {
+function Header({handlePreviewClick, showPreview, handleResetClick, handleReplayClick, showPopup, SiteLogo}) {
     
     return (
         <>
@@ -96,7 +96,7 @@ function Header({handlePreviewClick, showPreview, handleResetClick, handleReplay
                         <img 
                             className={styles.logo} 
                             alt='logo' 
-                            src='/media/logo.svg'/>
+                            src={SiteLogo}/>
                         {!showPreview &&(
                             <a 
                                 className={styles.preview_button} 

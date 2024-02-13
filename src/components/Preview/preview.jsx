@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './preview.module.css';
-function Preview({ settings, isReplayEnabled }) {
+
+function Preview({ settings, isReplayEnabled, PLaygroundImg}) {
     const imgRef = useRef(null);
     const titleRef = useRef(null);
     const descriptionRef = useRef(null);
@@ -112,7 +113,7 @@ function Preview({ settings, isReplayEnabled }) {
                     >
                         <img 
                             ref={imgRef} 
-                            src='/media/img_placeholder.jpg' 
+                            src={PLaygroundImg}
                             alt='animation setting' 
                             className={`${styles.imgStartStyle}`}
                         />

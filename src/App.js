@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from "./components/Header/header.jsx";
 import Body from "./components/Body/body.jsx";
 import Preview from './components/Preview/preview.jsx';
+import PLaygroundImg from './media/img_placeholder.jpg';
+import SiteLogo from './media/logo.svg';
 
 function App() {
 
@@ -133,6 +135,7 @@ function App() {
                 handleResetClick={handleResetClick}
                 handleReplayClick={handleReplayClick}
                 showPopup={showPopup}
+                SiteLogo={SiteLogo}
             />
 
             <Body
@@ -143,13 +146,15 @@ function App() {
                 selectedElement={selectedElement}
                 showPreview={showPreview}
                 setIsReplayEnabled={setIsReplayEnabled}
+                PLaygroundImg={PLaygroundImg}
             />
 
             {showPreview && 
             <Preview 
-            isReplayEnabled = {isReplayEnabled}
+                isReplayEnabled = {isReplayEnabled}
                 settings={settings} 
                 key={key}
+                PLaygroundImg={PLaygroundImg}
             />}
 
         </div>

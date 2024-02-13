@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './body.module.css';
 
-function  Body({ settings, selectElement, handleSettingsChange, selectedElement, showPreview, setIsReplayEnabled}) {
+function  Body({ settings, selectElement, handleSettingsChange, selectedElement, showPreview, setIsReplayEnabled, PLaygroundImg}) {
     const formatSettingValue = (name, value) => {
         switch (name) {
             case 'Opacity':
@@ -113,7 +113,7 @@ function  Body({ settings, selectElement, handleSettingsChange, selectedElement,
                         </div>
                         <img
                             onClick={() => selectElement('img')}
-                            src='/media/img_placeholder.jpg'
+                            src={PLaygroundImg}
                             alt='animation setting'
                         ></img>
                     </div>
