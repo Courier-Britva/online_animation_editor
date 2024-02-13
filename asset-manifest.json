@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Courier-Britva.github.io/online_animation_editor/static/css/main.a55624e6.css",
+    "main.js": "/Courier-Britva.github.io/online_animation_editor/static/js/main.4d8ea89c.js",
+    "index.html": "/Courier-Britva.github.io/online_animation_editor/index.html",
+    "main.a55624e6.css.map": "/Courier-Britva.github.io/online_animation_editor/static/css/main.a55624e6.css.map",
+    "main.4d8ea89c.js.map": "/Courier-Britva.github.io/online_animation_editor/static/js/main.4d8ea89c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a55624e6.css",
+    "static/js/main.4d8ea89c.js"
+  ]
+}
