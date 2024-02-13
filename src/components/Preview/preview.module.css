@@ -1,0 +1,238 @@
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.body_content{
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+.body{
+    position: relative;
+    background-color: #E5E5E5;
+}
+
+.playground{
+    height: 100%;
+    width: 100%;
+}
+
+.settings{
+    position: fixed;
+    height: 100%;
+    top: 58px;
+    right: 0;
+    width: 100%;
+    max-width: 240px;
+    z-index: 10;
+    background-color: #ffffff;
+}
+
+.settings_list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 15px;
+    margin-left: 13px;
+    margin-right: 20px;
+}
+
+.settings_name{
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13px;    
+    width: 46px;
+    text-align: right;
+    color: #444444;
+    margin-right: 16px;
+}
+
+.settings_value{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;    
+    color: #444444;
+}
+
+.settings_input{
+    width: 100%;
+    max-width: 118px;
+    margin-right: 10px;
+}
+
+.settings_element{
+    display: flex;
+    white-space: nowrap;
+}
+
+.playground_content{
+    display: flex;
+    width: 100%;
+    max-width: 874px;
+    background-color: #ffffff;
+    gap: 60px;
+    min-height: 495px;
+    padding: 70px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.playground_text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.playground_discription{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;    
+}
+
+.preview_container{
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 30;
+    background: #E5E5E5;
+}
+
+.infinite_animation{
+    animation-iteration-count: infinite;
+}
+/*
+    DYNAMICLY SETTED STYLES, DO NOT MODIFY
+*/
+  
+@keyframes imgAnimation {
+    from {
+        opacity: var(--start-img-opacity);
+        transform: translate(var(--start-img-x), var(--start-img-y)) scale(var(--start-img-scale));
+        filter: blur(var(--start-img-blur));
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.imgStartStyle{
+    animation-name: imgAnimation;
+    transition: all var(--start-img-speed);
+    animation-duration: var(--start-img-speed);
+    animation-delay: var(--start-img-delay);
+    animation-fill-mode: forwards;
+    transition-timing-function: var(--start-img-selected-easing);
+    animation-iteration-count: var(--start-img-infinite);
+}
+
+
+
+@keyframes titleAnimation {
+    from {
+        opacity: var(--start-title-opacity);
+        transform: translate(var(--start-title-x), var(--start-title-y)) scale(var(--start-title-scale));
+        filter: blur(var(--start-title-blur));
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.titleStartStyle{
+    animation-name: titleAnimation;
+    transition: all var(--start-title-speed);
+    animation-duration: var(--start-title-speed);
+    animation-delay: var(--start-title-delay);
+    animation-fill-mode: forwards;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -2px;
+    margin-top: 5px;
+    transition-timing-function: var(--start-title-selected-easing);
+    animation-iteration-count: var(--start-title-infinite);
+}
+
+
+
+@keyframes buttonAnimation {
+    from {
+        opacity: var(--start-button-opacity);
+        transform: translate(var(--start-button-x), var(--start-button-y)) scale(var(--start-button-scale));
+        filter: blur(var(--start-button-blur));
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.buttonStartStyle{
+    animation-name: buttonAnimation;
+    transition: all var(--start-button-speed);
+    animation-duration: var(--start-button-speed);
+    animation-delay: var(--start-button-delay);
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 143px;
+    padding: 14px 46px;
+    background: #3E87F8;
+    outline: navajowhite;
+    border: 0;
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #ffffff;
+    cursor: pointer;
+    transition-timing-function: var(--start-button-selected-easing);
+    animation-iteration-count: var(--start-button-infinite);
+}
+
+
+
+
+@keyframes descriptionAnimation {
+    from {
+        opacity: var(--start-description-opacity);
+        transform: translate(var(--start-description-x), var(--start-description-y)) scale(var(--start-description-scale));
+        filter: blur(var(--start-description-blur));
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.descriptionStartStyle{
+    animation-name: descriptionAnimation;
+    transition: all var(--start-description-speed);
+    animation-duration: var(--start-description-speed);
+    animation-delay: var(--start-description-delay);
+    animation-fill-mode: forwards;
+    transition-timing-function: var(--start-description-selected-easing);
+    animation-iteration-count: var(--start-description-infinite);
+}
+
+
+/*
+    DYNAMICLY SETTED STYLES, DO NOT MODIFY
+*/
